@@ -1,11 +1,5 @@
 package org.ssssssss.magicboot.utils;
 
-/**
- * @author baj
- * @creat 2022-08-09 15:28
- *
- * 这是用于数据库改为magic-boot的形式后的sql语句生成代码
- */
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -14,14 +8,18 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateTable {
+/**
+ * @author baj
+ * @creat 2022-08-10 9:54
+ */
+public class CreateTableParameter {
+
     public static void main(String[] args) throws Exception {
-        CreateTable createTable = new CreateTable();
-        CreateTable.ready();
+        CreateTableParameter ctp = new CreateTableParameter();
+        ctp.ready(1);
     }
 
-
-    public static void ready() throws Exception {
+    public static String ready(int ENTITYID) throws Exception {
         //数据准备，从数据库中取出建表的表名字段等信息，全部添加到datalist中
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(
@@ -29,7 +27,7 @@ public class CreateTable {
                 "root",
                 "6666");
         Statement statement = con.createStatement();
-        String sql1 = "select * from field2";
+        String sql1 = "select * from field2 where entity_id = " + ENTITYID;
         ResultSet rs = statement.executeQuery(sql1);
         List<FieldData> datalist = new ArrayList<FieldData>();
         while (rs.next()) {
@@ -46,11 +44,13 @@ public class CreateTable {
             d.setAuto_increment(rs.getString("auto_increment"));//是否自增
             datalist.add(d);
         }
-        build(con, datalist);
+        String res = build(con, datalist);
+        System.out.println(res);
+        return res;
     }
 
     //生成建表语句文本
-    public static void build(Connection con, List<FieldData> datalist) throws SQLException, IOException {
+    public static String build(Connection con, List<FieldData> datalist) throws SQLException, IOException {
         StringBuffer CT = new StringBuffer();// CT用来生成建表语句
         StringBuffer AddTip = new StringBuffer();//用来生成添加注释语句
         StringBuffer PK = new StringBuffer();//用来生成 联合主键语句
@@ -135,15 +135,15 @@ public class CreateTable {
             }
         }
 
+        return createtablesql.toString();
+
         //输出到文本文件
-        File f = new File("createTable.sql");
-        if (!f.exists()) {
-            f.createNewFile();
-        }
-        BufferedWriter output = new BufferedWriter(new FileWriter(f));
-        output.write(createtablesql.toString());
-        output.close();
+//        File f = new File("createTable.sql");
+//        if (!f.exists()) {
+//            f.createNewFile();
+//        }
+//        BufferedWriter output = new BufferedWriter(new FileWriter(f));
+//        output.write(createtablesql.toString());
+//        output.close();
     }
-
-
 }

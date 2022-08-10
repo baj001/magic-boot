@@ -56,6 +56,35 @@ common.handleDelete = (options) => {
   })
 }
 
+common.handleCreateTable = (options) => {
+  const url = options.url
+  const id = options.id
+  ElMessageBox.confirm('此操作将在数据库建表, 是否继续?', '提示', {
+    confirmButtonText: '确定',
+    cancelButtonText: '取消',
+    type: 'warning'
+  }).then(() => {
+    request({
+              url: url,
+              method: 'post',
+              params: {
+                id: id
+              }
+            }).then(() => {
+      ElNotification({
+                       title: '成功',
+                       message: '建表成功',
+                       type: 'success',
+                       duration: 2000
+                     })
+      options && options.done()
+  })
+})
+}
+
+
+
+
 const formatJson = (list, filterVal) => {
   return list.map(v => filterVal.map(j => {
     return v[j]

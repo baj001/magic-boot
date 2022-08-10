@@ -5,7 +5,7 @@
   "groupId" : "86162927c9d14ce4b62e02504ec6afc2",
   "name" : "列表",
   "createTime" : 1659506412449,
-  "updateTime" : null,
+  "updateTime" : 1660116350325,
   "lock" : null,
   "createBy" : null,
   "updateBy" : null,
@@ -118,7 +118,34 @@
                                     done: () => magicList.value.reload()
                                 })
                             }
+                        }, {
+                            permission: 'entity:create10:delete',
+                            label: '建表',
+                            type: 'primary',
+                            link: true,
+                            icon: 'ElIconDelete',
+                            click: (row) => {
+                                proxy.$common.handleCreateTable({
+                                    url: '/system/sql/create',
+                                    id: row.entityId,
+                                    done: () => magicList.value.reload()
+                                })
+                            }
                         }
+                        // }, {
+                        //     permission: 'entity:create10:delete',
+                        //     label: '建表',
+                        //     type: 'primary',
+                        //     link: true,
+                        //     icon: 'ElIconDelete',
+                        //     click: (row) => {
+                        //         proxy.$common.handleDelete({
+                        //             url: '/system/sql/create',
+                        //             id: row.entityId,
+                        //             done: () => magicList.value.reload()
+                        //         })
+                        //     }
+                        // }
                     ]
                 }
             ]
@@ -172,3 +199,5 @@
         }
     })
 </script>
+
+

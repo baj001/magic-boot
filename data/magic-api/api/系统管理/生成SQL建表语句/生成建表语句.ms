@@ -5,12 +5,12 @@
   "groupId" : "7ec506f972f14c5d828bf1ca8a9bf8c6",
   "name" : "生成建表语句",
   "createTime" : null,
-  "updateTime" : 1660092605769,
+  "updateTime" : 1660115965732,
   "lock" : null,
   "createBy" : null,
   "updateBy" : null,
   "path" : "/create",
-  "method" : "GET",
+  "method" : "POST",
   "parameters" : [ ],
   "options" : [ {
     "name" : "require_login",
@@ -24,11 +24,23 @@
     "error" : null,
     "expression" : null,
     "children" : null
+  }, {
+    "name" : "permission",
+    "value" : "system:sql:create",
+    "description" : "允许拥有该权限的访问",
+    "required" : false,
+    "dataType" : "String",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : null,
+    "error" : null,
+    "expression" : null,
+    "children" : null
   } ],
   "requestBody" : "",
   "headers" : [ ],
   "paths" : [ ],
-  "responseBody" : "{\n    \"code\": 200,\n    \"message\": \"success\",\n    \"data\": 0,\n    \"timestamp\": 1660092501709,\n    \"executeTime\": 28\n}",
+  "responseBody" : "{\n    \"code\": 200,\n    \"message\": \"success\",\n    \"data\": 0,\n    \"timestamp\": 1660113129765,\n    \"executeTime\": 40\n}",
   "description" : "",
   "requestBodyDefinition" : {
     "name" : "",
@@ -92,7 +104,7 @@
       "children" : [ ]
     }, {
       "name" : "timestamp",
-      "value" : "1660092501709",
+      "value" : "1660113129765",
       "description" : "",
       "required" : false,
       "dataType" : "Long",
@@ -104,7 +116,7 @@
       "children" : [ ]
     }, {
       "name" : "executeTime",
-      "value" : "28",
+      "value" : "40",
       "description" : "",
       "required" : false,
       "dataType" : "Object",
@@ -118,19 +130,35 @@
   }
 }
 ================================
-// CREATE TABLE `teacher` (
-//     `id` int(11) AUTO_INCREMENT COMMENT '主键ID',
-//     `age` int(11) DEFAULT NULL COMMENT '年龄',
-//     `name` varchar(32) DEFAULT NULL COMMENT '姓名',
-//     PRIMARY KEY (`id`)
-// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+import org.ssssssss.magicboot.utils.CreateTableParameter
+print("\r\n\r\n")
 
-// import org.ssssssss.magicboot.utils.AutoSql
-// return AutoSql.helloTest()
+print("当前的entity_id为 : " + id + "\r\n\r\n")
+
+print("开始执行建表语句\r\n\r\n")
+
+int ENTITYID = Integer.parseInt(id)
+var sql = CreateTableParameter.ready(ENTITYID)
+return db.update(sql);
 
 
-// import org.ssssssss.magicboot.utils.TableBuild
-// return TableBuild.ready()
+
+
+
+
+
+// import org.ssssssss.magicboot.utils.CreateTableParameter
+
+// print("当前的实体id:" + entityId +"\r\n\r\n")
+
+// print("开始执行建表语句\r\n\r\n")
+
+// int ENTITYID = Integer.parseInt(entityId)
+// var sql = CreateTableParameter.ready(ENTITYID)
+// return db.update(sql);
+
+
+// select * from sys_gen_info where id = #{id}
 
 // 方式1
 // import org.ssssssss.magicboot.utils.CreateTable
