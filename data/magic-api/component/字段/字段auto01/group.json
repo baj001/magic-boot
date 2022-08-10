@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "2cbb159dbbdb45efbb141900fc8ae790",
+  "name" : "字段auto01",
+  "type" : "component",
+  "parentId" : "f10ebc99756c4fc2951a2da1f0eaac1c",
+  "path" : "/01",
+  "createTime" : 1660026652962,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

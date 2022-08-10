@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "cbf6fe464f37430db2bf18bfbbf32a71",
+  "name" : "生成auto5",
+  "type" : "api",
+  "parentId" : "b7e412a492d54e6892f9120658e0ae06",
+  "path" : "/auto5",
+  "createTime" : 1660029579807,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

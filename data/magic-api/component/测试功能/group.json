@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "645bca68f22e4df69505bbbd52792938",
+  "name" : "测试功能",
+  "type" : "component",
+  "parentId" : "0",
+  "path" : "/test",
+  "createTime" : 1659518490434,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

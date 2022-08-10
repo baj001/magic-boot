@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "a7a73bf7026b47deb9e24c1d50791604",
+  "name" : "创建字段（添加了主键）",
+  "type" : "api",
+  "parentId" : "1c85679d7ead4dee971c550f89a6dd07",
+  "path" : "/createprimary",
+  "createTime" : 1659605148985,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

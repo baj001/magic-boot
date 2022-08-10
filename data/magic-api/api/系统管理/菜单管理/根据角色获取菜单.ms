@@ -1,0 +1,123 @@
+{
+  "properties" : { },
+  "id" : "9f4ebd1f444341c593a3d2a79d1a3356",
+  "script" : null,
+  "groupId" : "67b2ce258e24491194b74992958c74aa",
+  "name" : "根据角色获取菜单",
+  "createTime" : null,
+  "updateTime" : 1659945297677,
+  "lock" : "0",
+  "createBy" : null,
+  "updateBy" : null,
+  "path" : "/by/role",
+  "method" : "GET",
+  "parameters" : [ {
+    "name" : "roleId",
+    "value" : "4d80f40315f747768d5b14095a0a7336",
+    "description" : "",
+    "required" : false,
+    "dataType" : "String",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : null,
+    "error" : null,
+    "expression" : null,
+    "children" : null
+  } ],
+  "options" : [ {
+    "name" : "require_login",
+    "value" : "false",
+    "description" : "该接口需要登录才允许访问",
+    "required" : false,
+    "dataType" : "String",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : null,
+    "error" : null,
+    "expression" : null,
+    "children" : null
+  } ],
+  "requestBody" : "",
+  "headers" : [ ],
+  "paths" : [ ],
+  "responseBody" : "{\n    \"code\": 402,\n    \"message\": \"凭证已过期\",\n    \"data\": null,\n    \"timestamp\": 1659945286824,\n    \"executeTime\": null\n}",
+  "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : {
+    "name" : "",
+    "value" : "",
+    "description" : "",
+    "required" : false,
+    "dataType" : "Object",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : "",
+    "error" : "",
+    "expression" : "",
+    "children" : [ {
+      "name" : "code",
+      "value" : "402",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Integer",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "message",
+      "value" : "凭证已过期",
+      "description" : "",
+      "required" : false,
+      "dataType" : "String",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "data",
+      "value" : "null",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Array",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "timestamp",
+      "value" : "1659945286824",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Long",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "executeTime",
+      "value" : "null",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Object",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    } ]
+  }
+}
+================================
+return db.select("""
+    select menu_id id from sys_role_menu where role_id = #{roleId}
+""").map(it => it.id)

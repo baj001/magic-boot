@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "1c85679d7ead4dee971c550f89a6dd07",
+  "name" : "字段",
+  "type" : "api",
+  "parentId" : "0",
+  "path" : "/field",
+  "createTime" : 1659407886180,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "75f9c880ef70453bbdeb5c73d12703bc",
+  "name" : "创建字段07",
+  "type" : "api",
+  "parentId" : "1c85679d7ead4dee971c550f89a6dd07",
+  "path" : "/create07",
+  "createTime" : 1659497334751,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

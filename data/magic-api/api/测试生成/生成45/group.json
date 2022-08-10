@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "df30a3a2d92b4590b9b7185599100eb8",
+  "name" : "生成45",
+  "type" : "api",
+  "parentId" : "b7e412a492d54e6892f9120658e0ae06",
+  "path" : "/45",
+  "createTime" : 1659928083238,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

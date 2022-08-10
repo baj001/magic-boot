@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "7345388aa92044ad939b1c6985160f34",
+  "name" : "生成auto4",
+  "type" : "api",
+  "parentId" : "b7e412a492d54e6892f9120658e0ae06",
+  "path" : "/auto4",
+  "createTime" : 1660028270086,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "d62f9ea0636e42629955a7e0a0f586ac",
+  "name" : "生成42",
+  "type" : "component",
+  "parentId" : "cbff06c4996045df88e089e844cf944d",
+  "path" : "/42",
+  "createTime" : 1659926613032,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

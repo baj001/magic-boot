@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "4d657965a18340aab52a1fa9f5b7dd8e",
+  "name" : "实体",
+  "type" : "component",
+  "parentId" : "0",
+  "path" : "/entity",
+  "createTime" : 1659406289145,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

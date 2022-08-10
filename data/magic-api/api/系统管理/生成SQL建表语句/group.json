@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "7ec506f972f14c5d828bf1ca8a9bf8c6",
+  "name" : "生成SQL建表语句",
+  "type" : "api",
+  "parentId" : "acff5ad7aae64de2acb03e1d16a58ce2",
+  "path" : "/sql",
+  "createTime" : 1659940432567,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

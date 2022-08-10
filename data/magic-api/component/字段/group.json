@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "f10ebc99756c4fc2951a2da1f0eaac1c",
+  "name" : "字段",
+  "type" : "component",
+  "parentId" : "0",
+  "path" : "/field",
+  "createTime" : 1659407886231,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

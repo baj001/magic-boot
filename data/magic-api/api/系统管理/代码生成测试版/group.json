@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "a5266e0bbc3940aba40e743c0c8edc73",
+  "name" : "代码生成测试版",
+  "type" : "api",
+  "parentId" : "acff5ad7aae64de2acb03e1d16a58ce2",
+  "path" : "/codetest/gen",
+  "createTime" : 1659594633139,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

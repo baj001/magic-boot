@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "f172ef16474c47eabb2a2a33c513b780",
+  "name" : "代码生成(Copy)",
+  "type" : "api",
+  "parentId" : "be400834e6174f178e4ff9809521f386",
+  "path" : "/code/gen_copy",
+  "createTime" : 1659510455445,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

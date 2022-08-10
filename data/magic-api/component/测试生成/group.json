@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "cbff06c4996045df88e089e844cf944d",
+  "name" : "测试生成",
+  "type" : "component",
+  "parentId" : "0",
+  "path" : "/grow",
+  "createTime" : 1659519235837,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "8dd7fc309d9a4aa8b1c71d1d71fa0272",
+  "name" : "字段auto01",
+  "type" : "api",
+  "parentId" : "1c85679d7ead4dee971c550f89a6dd07",
+  "path" : "/01",
+  "createTime" : 1660026652856,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}

@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "b4a11522ac934947a60a0c17b6e23a5c",
+  "name" : "创建实体06",
+  "type" : "api",
+  "parentId" : "548f48846551450f813d48f13256caec",
+  "path" : "/create06",
+  "createTime" : 1659495853184,
+  "updateTime" : null,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}
